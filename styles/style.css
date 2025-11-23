@@ -1,5 +1,300 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+    background-image: url(/images/cover-image-dark.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header, .footer {
+    height: 100vh;
+    position: relative;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-content: end;
+}
+
+.header-subtitle {
+    margin-bottom: 56px;
+}
+
+.decorated-zone::before {
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+    content: ' ';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.header-decoration {
+    position: absolute;
+    top: 13px;
+    right: 34px;
+    font: normal 400 18px/25px inherit;
+    letter-spacing: 0;
+    color: var(--accent-color);
+}
+
+.header-decoration:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 7px;
+    left: 35px;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 4px 4px var(--accent-color);
+    border-radius: 50%;
+}
+
+.header__theme-menu {
+    inline-size: fit-content;
+    position: absolute;
+    right: 10px;
+    top: 75px;
+}
+
+.header__theme-menu-button {
+    background: transparent;
+    border: none;
+    font: 400 normal 18px/18px inherit;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--accent-color);
+    text-transform: lowercase;
+}
+
+.header__theme-menu-button:focus-within {
+    border-bottom: 1px solid currentColor;
+    outline: none;
+}
+
+.header__theme-menu-button:hover {
+    outline: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+
+.title {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    line-height: 83%;
+    letter-spacing: 0;
+    text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.section__ahead, .section__cards, .section__container, .cards__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.section-title, .card-title, .card-subtitle {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0;
+}
+
+.card-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0;
+    color: var(--third-color);
+
+    a {
+        text-decoration: none;
+        text-shadow: 2px 2px 0 var(--accent-color);
+    }
+
+    a:hover {
+        border-bottom: 1px solid currentColor;
+        outline: none;
+    }
+
+    a:focus-within {
+        border: 1px solid currentColor;
+        outline: none;
+    }
+}
+
+.card-title, .section-heading {
+    color: #000028;
+    margin-bottom: 10px;
+}
+
+.section-heading {
+    margin-bottom: 0;
+}
+
+.card-subtitle {
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #000028;
+}
+
+.section__images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+
+    span {
+        height: fit-content;
+    }
+}
+
+@media (width >= 768px) {
+    .header, .footer {
+        padding: 20px;
+    }
+
+    .header {
+        gap: 163px;
+    }
+
+    .header-decoration {
+        top: 21px;
+        right: 45px;
+    }
+
+    .header__theme-menu {
+        right: 20px;
+        top: 192px;
+    }
+
+    .header-subtitle {
+        inline-size: 364px;
+        margin-left: auto;
+        margin-bottom: 183px;
+    }
+
+    .title {
+        margin-left: -20px;
+    }
+
+    .decorated-zone::before {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .decorated-zone::after {
+        top: 20px;
+        right: 20px;
+    }
+
+    .section-title {
+        inline-size: 236px;
+    }
+
+    .section__ahead {
+        grid-template-columns: max-content 1fr;
+        column-gap: 20px;
+    }
+
+    .section__images {
+        gap: 20px;
+    }
+
+    .section__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .section__grid-image:nth-child(1) {
+        grid-column-start: span 2;
+    }
+    .section__grid-image:nth-child(2) {
+        grid-row-start: span 2;
+    }
+    .section__grid-image:nth-child(3) {
+        grid-row-start: span 2;
+    }
+    .section__grid-image:nth-child(4) {
+        grid-row-start: span 1;
+    }
+    .section__grid-image:nth-child(5) {
+        grid-column-start: span 2;
+    }
+
+    .footer {
+        span {
+            margin: auto;
+        }
+    }
+}
+
+@media (width >= 1024px) {
+    .title {
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
+
+    .header {
+        gap: 114px;
+    }
+
+    .header__theme-menu-list {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .header__theme-menu {
+        right: 50%;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .header-subtitle {
+        inline-size: 491px;
+        margin-bottom: 134px;
+    }
+
+    .section-title {
+        inline-size: 315px;
+    }
+
+    .cards .cards__list {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+    }
 }
