@@ -7,6 +7,6 @@
     --header-title-color: #DB00FF;
     --aside-title-color: #FF0070;
     --accent-text-color: #000028;
-    --background-image: url(/images/cover-image-dark.png);
+    --background-image: url(../images/cover-image-dark.png);
     --is-show-decoration: flex;
 }
