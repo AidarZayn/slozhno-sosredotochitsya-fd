@@ -1,22 +1,22 @@
 .page {
     background-image: var(--background-image);
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .header, .footer {
-    height: 100vh;
     position: relative;
+    height: 100vh;
     padding: 10px;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    gap: 55px;
     justify-content: end;
+    gap: 55px;
 }
 
 .header__theme-menu-list {
@@ -31,73 +31,73 @@
 
 .decorated-zone::before {
     content: ' ';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     width: 24px;
     height: 24px;
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    border-block-start: 0;
-    border-inline-end: 0;
-    border-block-end: 1px solid var(--decoration-color);
     border-inline-start: 1px solid var(--decoration-color);
+    border-inline-end: 0;
+    border-block-start: 0;
+    border-block-end: 1px solid var(--decoration-color);
 }
 
 .decorated-zone::after {
     content: ' ';
-    width: 24px;
-    height: 24px;
     position: absolute;
     top: 10px;
     right: 10px;
-    border-block-start: 1px solid var(--decoration-color);
-    border-inline-end: 1px solid var(--decoration-color);
-    border-block-end: 0;
+    width: 24px;
+    height: 24px;
     border-inline-start: 0;
+    border-inline-end: 1px solid var(--decoration-color);
+    border-block-start: 1px solid var(--decoration-color);
+    border-block-end: 0;
 }
 
 .header-decoration {
-    display: var(--is-show-decoration);
     position: absolute;
     top: 10px;
     right: 38px;
+    display: var(--is-show-decoration);
+    color: var(--accent-color);
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0;
     text-align: center;
-    color: var(--accent-color);
 }
 
 .header-decoration:after {
     content: '';
-    width: 6px;
-    height: 6px;
     position: absolute;
     top: 9px;
     left: 42px;
-    background-color: var(--accent-color);
-    box-shadow: 0 0 4px 4px var(--accent-color);
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
+    box-shadow: 0 0 4px 4px var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 .header__theme-menu {
-    inline-size: fit-content;
     position: absolute;
-    right: 10px;
     top: 74px;
+    right: 10px;
+    inline-size: fit-content;
 }
 
 .header__theme-menu-button {
-    background: transparent;
     border: none;
+    padding: 3px 12px;
+    color: var(--nav-color);
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    padding: 3px 12px;
     letter-spacing: 0;
     text-align: center;
-    color: var(--nav-color);
     text-transform: lowercase;
+    background: transparent;
 }
 
 .header__theme-menu-button:focus-within {
@@ -142,15 +142,15 @@
 }
 
 .section-title {
-    color: var(--aside-title-color)
+    color: var(--aside-title-color);
 }
 
 .card-description {
+    color: var(--pink-color);
     font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
     letter-spacing: 0;
-    color: var(--pink-color);
 
     a {
         text-decoration: none;
@@ -169,8 +169,8 @@
 }
 
 .card-title, .section-heading {
-    color: var(--accent-text-color);
     margin-block-end: 10px;
+    color: var(--accent-text-color);
 }
 
 .section-heading {
@@ -179,8 +179,8 @@
 
 .card-subtitle {
     margin-block-end: 10px;
-    font-weight: 400;
     color: var(--accent-text-color);
+    font-weight: 400;
 }
 
 .section__images {
@@ -219,14 +219,14 @@
     }
 
     .header__theme-menu {
-        right: 20px;
         top: 192px;
+        right: 20px;
     }
 
     .header-subtitle {
-        inline-size: 364px;
         margin-inline-start: auto;
         margin-block-end: 164px;
+        inline-size: 364px;
     }
 
     .title {
@@ -307,15 +307,15 @@
     }
 
     .header__theme-menu {
-        right: 50%;
         top: 20px;
+        right: 50%;
         left: 50%;
         transform: translate(-50%, 0);
     }
 
     .header-subtitle {
-        inline-size: 491px;
         margin-block-end: 115px;
+        inline-size: 491px;
     }
 
     .section-title {

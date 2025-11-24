@@ -5,10 +5,10 @@
 }
 
 body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
   margin: 0 auto;
   font-family: 'IBM Plex mono', monospace;
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
 }
 
 h1,
@@ -41,31 +41,31 @@ a {
 }
 
 img {
-  object-position: center;
   object-fit: cover;
+  object-position: center;
   block-size: 100%;
   inline-size: 100%;
 }
 
 main {
-  padding: 40px 10px;
   display: flex;
   flex-direction: column;
   gap: 49px;
+  padding: 40px 10px;
 }
 
 .title-decor {
-  background-color: var(--accent-color);
   color: var(--accent-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0;
+  background-color: var(--accent-color);
 }
 
 @media (width >= 768px) {
   main {
-    padding: 60px 20px;
     gap: 81px;
+    padding: 60px 20px;
   }
 }
