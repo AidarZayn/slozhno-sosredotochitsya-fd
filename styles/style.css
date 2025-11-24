@@ -19,8 +19,14 @@
     justify-content: end;
 }
 
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .header-subtitle {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
 }
 
 .decorated-zone::before {
@@ -51,20 +57,23 @@
 
 .header-decoration {
     position: absolute;
-    top: 13px;
-    right: 34px;
-    font: normal 400 18px/25px inherit;
+    top: 10px;
+    right: 38px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
     letter-spacing: 0;
+    text-align: center;
     color: var(--accent-color);
 }
 
 .header-decoration:after {
     content: '';
-    width: 9px;
-    height: 9px;
+    width: 6px;
+    height: 6px;
     position: absolute;
-    top: 7px;
-    left: 35px;
+    top: 9px;
+    left: 42px;
     background-color: var(--accent-color);
     box-shadow: 0 0 4px 4px var(--accent-color);
     border-radius: 50%;
@@ -74,13 +83,16 @@
     inline-size: fit-content;
     position: absolute;
     right: 10px;
-    top: 75px;
+    top: 74px;
 }
 
 .header__theme-menu-button {
     background: transparent;
     border: none;
-    font: 400 normal 18px/18px inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 3px 12px;
     letter-spacing: 0;
     text-align: center;
     color: var(--accent-color);
@@ -113,8 +125,12 @@
 .section__ahead, .section__cards, .section__container, .cards__list {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 20px;
+    row-gap: 21px;
 }
+.cards__list {
+    row-gap: 20.6px;
+}
+
 
 .section-title, .card-title, .card-subtitle {
     color: var(--accent-color);
@@ -127,7 +143,7 @@
 .card-description {
     font-weight: 400;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 23.4px;
     letter-spacing: 0;
     color: var(--third-color);
 
@@ -189,11 +205,11 @@
     }
 
     .header {
-        gap: 163px;
+        gap: 160px;
     }
 
     .header-decoration {
-        top: 21px;
+        top: 23px;
         right: 45px;
     }
 
@@ -205,7 +221,7 @@
     .header-subtitle {
         inline-size: 364px;
         margin-left: auto;
-        margin-bottom: 183px;
+        margin-bottom: 164px;
     }
 
     .title {
@@ -232,7 +248,8 @@
     }
 
     .section__images {
-        gap: 20px;
+        gap: 21px;
+        margin-top: -4px;
     }
 
     .section__grid {
@@ -256,6 +273,14 @@
         grid-column-start: span 2;
     }
 
+    .section__ahead, .section__cards, .section__container, .cards__list {
+        row-gap: 20px;
+    }
+
+    .card-subtitle {
+        margin-bottom: 11px;
+    }
+
     .footer {
         span {
             margin: auto;
@@ -273,10 +298,9 @@
     }
 
     .header__theme-menu-list {
-        display: flex;
-        gap: 10px;
+        flex-direction: unset;
     }
-    
+
     .header__theme-menu {
         right: 50%;
         top: 20px;
@@ -286,7 +310,7 @@
 
     .header-subtitle {
         inline-size: 491px;
-        margin-bottom: 134px;
+        margin-bottom: 115px;
     }
 
     .section-title {
