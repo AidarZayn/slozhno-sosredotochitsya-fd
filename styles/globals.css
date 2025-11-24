@@ -56,7 +56,7 @@ main {
 
 .title-decor {
   background-color: var(--accent-color);
-  color: #000028;
+  color: var(--accent-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;

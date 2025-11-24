@@ -1,5 +1,5 @@
 .page {
-    background-image: url(/images/cover-image-dark.png);
+    background-image: var(--background-image);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,8 +38,8 @@
     bottom: 10px;
     border-top: 0;
     border-right: 0;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--decoration-color);
+    border-left: 1px solid var(--decoration-color);
 }
 
 .decorated-zone::after {
@@ -49,13 +49,14 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
+    border-top: 1px solid var(--decoration-color);
+    border-right: 1px solid var(--decoration-color);
     border-bottom: 0;
     border-left: 0;
 }
 
 .header-decoration {
+    display: var(--is-show-decoration);
     position: absolute;
     top: 10px;
     right: 38px;
@@ -95,7 +96,7 @@
     padding: 3px 12px;
     letter-spacing: 0;
     text-align: center;
-    color: var(--accent-color);
+    color: var(--nav-color);
     text-transform: lowercase;
 }
 
@@ -105,16 +106,16 @@
 }
 
 .header__theme-menu-button:hover {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid var(--nav-color);
 }
 
 .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--nav-color);
     outline: none;
 }
 
 .title {
-    color: var(--secondary-color);
+    color: var(--header-title-color);
     font-weight: 700;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 83%;
@@ -140,12 +141,16 @@
     letter-spacing: 0;
 }
 
+.section-title {
+    color: var(--aside-title-color)
+}
+
 .card-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
     letter-spacing: 0;
-    color: var(--third-color);
+    color: var(--pink-color);
 
     a {
         text-decoration: none;
@@ -164,7 +169,7 @@
 }
 
 .card-title, .section-heading {
-    color: #000028;
+    color: var(--accent-text-color);
     margin-bottom: 10px;
 }
 
@@ -175,7 +180,7 @@
 .card-subtitle {
     margin-bottom: 10px;
     font-weight: 400;
-    color: #000028;
+    color: var(--accent-text-color);
 }
 
 .section__images {
@@ -209,8 +214,8 @@
     }
 
     .header-decoration {
-        top: 23px;
-        right: 45px;
+        top: 21px;
+        right: 46px;
     }
 
     .header__theme-menu {

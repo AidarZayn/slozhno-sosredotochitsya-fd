@@ -1,5 +1,12 @@
 :root {
     --accent-color: #FF0070;
-    --secondary-color: #DB00FF;
-    --third-color: #F1B2CE;
+    --purple-color: #DB00FF;
+    --pink-color: #F1B2CE;
+    --nav-color: #FF0070;
+    --decoration-color: #FF0070;
+    --header-title-color: #DB00FF;
+    --aside-title-color: #FF0070;
+    --accent-text-color: #000028;
+    --background-image: url(/images/cover-image-dark.png);
+    --is-show-decoration: flex;
 }
