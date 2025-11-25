@@ -231,10 +231,6 @@
         gap: 0;
     }
 
-    .title {
-        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    }
-
     .header-decoration {
         top: 20px;
         right: 48px;
@@ -262,6 +258,7 @@
 
     .title {
         margin-inline-start: -20px;
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 
     .decorated-zone::before {
