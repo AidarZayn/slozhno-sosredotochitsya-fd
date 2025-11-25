@@ -95,7 +95,7 @@
 }
 
 .header__theme-menu {
-    margin-top: 65px;
+    margin-block-start: 65px;
     width: fit-content;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid currentColor;
+    border-block-end: 1px solid currentColor;
     outline: none;
 }
 
@@ -141,7 +141,7 @@
 .content-section, .section__container, .cards__list {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 21px;
+    row-gap: 20px;
 }
 
 .cards__list {
@@ -155,11 +155,11 @@
 .cards__list-item {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 10px;
 }
 
 .content-section:nth-child(4) {
-    row-gap: 11px;
+    row-gap: 10px;
 }
 
 .section-title, .card-title, .card-subtitle {
@@ -237,7 +237,7 @@
     }
 
     .header__theme-menu {
-        margin-top: 171px;
+        margin-block-start: 171px;
     }
 
 
@@ -286,7 +286,7 @@
         row-gap: 20px;
     }
 
-    .content-section:nth-child(4) {
+    .section__container {
         row-gap: 21px;
     }
 
@@ -319,10 +319,6 @@
         gap: 9px;
     }
 
-    .card-description {
-        line-height: 23.42px;
-    }
-
     .footer {
         span {
             margin: auto;
@@ -342,11 +338,11 @@
 
     .header > :nth-child(3) {
         align-self: end;
-        margin-bottom: 114px;
+        margin-block-end: 114px;
     }
 
     .header__theme-menu {
-        margin-top: 0;
+        margin-block-start: 0;
     }
 
     .header__theme-menu-list {
