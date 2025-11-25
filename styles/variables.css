@@ -2,11 +2,12 @@
     --accent-color: #FF0070;
     --purple-color: #DB00FF;
     --pink-color: #F1B2CE;
-    --nav-color: #FF0070;
+    --nav-color: 255,0,112;
     --decoration-color: #FF0070;
     --header-title-color: #DB00FF;
     --aside-title-color: #FF0070;
     --accent-text-color: #000028;
     --background-image: url(../images/cover-image-dark.png);
+    --background-spare: #000028;
     --is-show-decoration: flex;
 }

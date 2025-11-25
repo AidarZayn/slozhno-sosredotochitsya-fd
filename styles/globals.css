@@ -50,7 +50,7 @@ img {
 main {
   display: flex;
   flex-direction: column;
-  gap: 49px;
+  gap: 52px;
   padding: 40px 10px;
 }
 
@@ -58,14 +58,14 @@ main {
   color: var(--accent-text-color);
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
   letter-spacing: 0;
   background-color: var(--accent-color);
 }
 
 @media (width >= 768px) {
   main {
-    gap: 81px;
+    gap: 80px;
     padding: 60px 20px;
   }
 }

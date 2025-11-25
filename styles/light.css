@@ -2,11 +2,29 @@
     --accent-color: #FF8DCB;
     --purple-color: #FF8DCB;
     --pink-color: #353430;
-    --nav-color: #353430;
+    --nav-color: 53,52,48;
     --decoration-color: #353430;
     --header-title-color: #FFC2E6;
     --aside-title-color: #353430;
     --accent-text-color: #353430;
     --background-image: url(../images/cover-image-light.png);
+    --background-spare: #ffedfa;
     --is-show-decoration: none;
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --accent-color: #FF8DCB;
+        --purple-color: #FF8DCB;
+        --pink-color: #353430;
+        --nav-color: 53,52,48;
+        --decoration-color: #353430;
+        --header-title-color: #FFC2E6;
+        --aside-title-color: #353430;
+        --accent-text-color: #353430;
+        --background-image: url(../images/cover-image-light.png);
+        --background-spare: #ffedfa;
+        --is-show-decoration: none;
+    }
 }
