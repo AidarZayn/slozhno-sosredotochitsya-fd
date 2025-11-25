@@ -206,12 +206,6 @@
     font-weight: 400;
 }
 
-.section__images {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .section__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -297,11 +291,6 @@
 
     .content-section:nth-child(4) {
         row-gap: 21px;
-    }
-
-    .section__images {
-        gap: 21px;
-        margin-block-start: -4px;
     }
 
     .section__grid {
